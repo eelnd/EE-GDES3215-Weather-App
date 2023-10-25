@@ -311,7 +311,8 @@ strong {
 .wind-data ul {
     display:grid;
     /* grid-template-rows: auto auto; */
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
     grid-gap:0rem;
     list-style: none;
     justify-self: center;
@@ -325,6 +326,7 @@ strong {
     text-align: center;
     padding:0.5rem;
     color: var(--color-darkblue);
+    margin-top: 2rem;
 }
 
 .wind-forecast li {
