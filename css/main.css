@@ -1,0 +1,337 @@
+:root {
+    --color-lightestblue: #E2ECF4;
+    --color-darkblue: #374655;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-offwhite: #F2F2F2;
+    --color-grey: #CECECE;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "komet", sans-serif;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+strong {
+    padding: 0;
+    margin:0;
+}
+
+.icon img {
+    height: 4rem;
+}
+
+.cover {
+    /*temp*/
+    /* position details */
+    display:grid;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* other details */
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-lightestblue);
+    padding: 2rem;
+    /* display: grid; */
+    grid-template-rows: 1fr 10fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align:center;
+    transition: 1s all;
+    /*image bg*/
+    background-image: url('../img/cover-screen.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.cover h1 {
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--color-darkblue);
+}
+
+/* .cover button {
+    border: 0;
+    padding: 0.5rem 1rem;
+} */
+
+.cta {
+    grid-row: 3;
+    border: none;
+    background: transparent; 
+    cursor: pointer;
+  }  
+
+.slide {
+    transform: translateY(-100%);
+  }
+
+/* .mc-overlay {
+    background-image: '../img/mcbgnobg.svg';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+} */
+.main-content {
+    height: 100vh;
+    background-image: url('../img/mcbg.svg');
+    background-size: fit;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1rem;
+    background-color: var(--color-lightestblue);
+    position: relative;
+    z-index: 1;
+}
+
+.current {
+    display:grid;
+    grid-template-rows: 8rem auto;
+    height: 100%;
+    padding-top: 1rem;
+    /* background: var(--color-lightestblue); */
+}
+
+.main-content .current .current-location {
+    display:grid;
+    grid-template-columns: auto;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    padding-bottom: 3rem;
+    color: var(--color-darkblue);
+    /* text-transform: uppercase; */
+}
+
+.main-content .current .current-location img {
+    grid-column: 1;
+    align-self: center;
+    justify-self: end;
+}
+
+.main-content .current .current-location h1 {
+    grid-column: 2;
+    margin: 0;
+    align-self: center;
+    justify-self: start;
+}
+
+.main-content .current .current-box {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 1rem;
+    margin: -2rem 1rem 1rem 1rem;
+    padding: 1rem;
+    background-color: var(--color-darkblue);
+    border-radius: 1rem;
+    color: var(--color-white)
+}
+
+.main-content .current .current-box h2 {
+    font-size: 2.5rem;
+}
+
+.main-content .current .current-box .current-icon {
+    grid-column: 1;
+    grid-row:2;
+}
+
+.main-content .current .current-box  {
+    /* grid-column: 2;
+    display: grid;
+    grid-template-rows: 2.5rem 2.5rem;
+    grid-gap: 1rem; */
+    margin: -4rem 1rem 1rem 1rem;
+    padding: 1rem;
+}
+
+.main-content .current .current-box .sr {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.main-content .current .current-box .high {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.main-content .current .current-box. .current-icon p {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.extended {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 100%;
+    /* padding: 1rem; */
+    margin-top: 23rem;
+}
+
+.waves img {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/* .waves {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .w1 {
+    align-self: start;
+    animation: bounce 3s infinite;
+    overflow:hidden;
+  }
+  
+  .w2 {
+    align-self:center;
+    animation: bounce2 3s infinite;
+  }
+  
+  .w3 {
+    align-self: end;
+    animation: bounce3 3s infinite;
+  }
+
+  @keyframes bounce{
+    0%, 100% {
+          transform: translateY(0);
+        }
+    45% {
+          transform: translateY(-1rem);
+        }
+    75% {
+      transform: translateY(2rem);
+    }
+  }
+  
+  @keyframes bounce2{
+    0%, 100% {
+          transform: translateY(1rem);
+        }
+        50% {
+          transform: translateY(-2rem);
+        }
+  }
+  
+  @keyframes bounce3{
+    0%, 100% {
+          transform: translateY(0rem);
+        }
+        45% {
+          transform: translateY(-1.5rem);
+        }
+    65% {
+      transform: translateY(2rem)
+    }
+  } */
+
+.extended ul {
+    height: 80%;
+    list-style: none;
+    /* margin: 1rem; */
+    padding: 0.5rem;
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 0;
+}
+
+.extended .ex-weather li {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    /* background-color:aliceblue; */
+    /* border-radius: 1rem; */
+}
+
+.extended h2 {
+    text-align: center;
+    margin: 1rem;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    color: var(--color-darkblue);
+}
+
+.extended .ex-weather {
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.extended li {
+    color: var(--color-darkblue);
+    fill: var(--color-darkblue);
+}
+
+.wind-forecast {
+    display:grid;
+    grid-template-rows: 1fr auto;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    margin: -4.5rem 1rem 1rem 1rem;
+    padding: 1rem;
+}
+
+.wind-data ul {
+    display:grid;
+    /* grid-template-rows: auto auto; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:0rem;
+    list-style: none;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.wind-forecast h2 {
+    text-align: center;
+    padding:0.5rem;
+    color: var(--color-darkblue);
+}
+
+.wind-forecast li {
+    fill: var(--color-darkblue);
+    color: var(--color-darkblue);
+}
+
+.wind-data li {
+    text-align: center;
+}
