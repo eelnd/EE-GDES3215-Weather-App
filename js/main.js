@@ -28,6 +28,11 @@
 
 
     /*forecast for the next six days*/
+    $('.extended li:nth-child(0) .day').html(displayDay(1));
+    $('.extended li:nth-child(0) .icon').html(printGraphic(d.forecast.forecastday[1].day.condition.text));
+    $('.extended li:nth-child(0) .high').html( makeRoundNumber(d.forecast.forecastday[1].day.maxtemp_f));
+    $('.extended li:nth-child(0) .low').html( makeRoundNumber(d.forecast.forecastday[1].day.mintemp_f));
+
     $('.extended li:nth-child(1) .day').html(displayDay(1));
     $('.extended li:nth-child(1) .icon').html(printGraphic(d.forecast.forecastday[1].day.condition.text));
     $('.extended li:nth-child(1) .high').html( makeRoundNumber(d.forecast.forecastday[1].day.maxtemp_f));
@@ -38,25 +43,25 @@
     $('.extended li:nth-child(2) .high').html( makeRoundNumber(d.forecast.forecastday[2].day.maxtemp_f));
     $('.extended li:nth-child(2) .low').html( makeRoundNumber(d.forecast.forecastday[2].day.mintemp_f));
 
-    $('.extended li:nth-child(3) .day').html(displayDay(3));
-    $('.extended li:nth-child(3) .icon').html(printGraphic(d.forecast.forecastday[3].day.condition.text));
-    $('.extended li:nth-child(3) .high').html( makeRoundNumber(d.forecast.forecastday[3].day.maxtemp_f));
-    $('.extended li:nth-child(3) .low').html( makeRoundNumber(d.forecast.forecastday[3].day.mintemp_f));
+    // $('.extended li:nth-child(3) .day').html(displayDay(3));
+    // $('.extended li:nth-child(3) .icon').html(printGraphic(d.forecast.forecastday[3].day.condition.text));
+    // $('.extended li:nth-child(3) .high').html( makeRoundNumber(d.forecast.forecastday[3].day.maxtemp_f));
+    // $('.extended li:nth-child(3) .low').html( makeRoundNumber(d.forecast.forecastday[3].day.mintemp_f));
 
-    $('.extended li:nth-child(4) .day').html(displayDay(4));
-    $('.extended li:nth-child(4) .icon').html(printGraphic(d.forecast.forecastday[4].day.condition.text));
-    $('.extended li:nth-child(4) .high').html( makeRoundNumber(d.forecast.forecastday[4].day.maxtemp_f));
-    $('.extended li:nth-child(4) .low').html( makeRoundNumber(d.forecast.forecastday[4].day.mintemp_f));
+    // $('.extended li:nth-child(4) .day').html(displayDay(4));
+    // $('.extended li:nth-child(4) .icon').html(printGraphic(d.forecast.forecastday[4].day.condition.text));
+    // $('.extended li:nth-child(4) .high').html( makeRoundNumber(d.forecast.forecastday[4].day.maxtemp_f));
+    // $('.extended li:nth-child(4) .low').html( makeRoundNumber(d.forecast.forecastday[4].day.mintemp_f));
 
-    $('.extended li:nth-child(5) .day').html(displayDay(5));
-    $('.extended li:nth-child(5) .icon').html(printGraphic(d.forecast.forecastday[5].day.condition.text));
-    $('.extended li:nth-child(5) .high').html( makeRoundNumber(d.forecast.forecastday[5].day.maxtemp_f));
-    $('.extended li:nth-child(5) .low').html( makeRoundNumber(d.forecast.forecastday[5].day.mintemp_f));
+    // $('.extended li:nth-child(5) .day').html(displayDay(5));
+    // $('.extended li:nth-child(5) .icon').html(printGraphic(d.forecast.forecastday[5].day.condition.text));
+    // $('.extended li:nth-child(5) .high').html( makeRoundNumber(d.forecast.forecastday[5].day.maxtemp_f));
+    // $('.extended li:nth-child(5) .low').html( makeRoundNumber(d.forecast.forecastday[5].day.mintemp_f));
 
-    $('.extended li:nth-child(6) .day').html(displayDay(6));
-    $('.extended li:nth-child(6) .icon').html(printGraphic(d.forecast.forecastday[6].day.condition.text));
-    $('.extended li:nth-child(6) .high').html( makeRoundNumber(d.forecast.forecastday[6].day.maxtemp_f));
-    $('.extended li:nth-child(6) .low').html( makeRoundNumber(d.forecast.forecastday[6].day.mintemp_f));
+    // $('.extended li:nth-child(6) .day').html(displayDay(6));
+    // $('.extended li:nth-child(6) .icon').html(printGraphic(d.forecast.forecastday[6].day.condition.text));
+    // $('.extended li:nth-child(6) .high').html( makeRoundNumber(d.forecast.forecastday[6].day.maxtemp_f));
+    // $('.extended li:nth-child(6) .low').html( makeRoundNumber(d.forecast.forecastday[6].day.mintemp_f));
 
     /*wind forecast*/
     $('.wind-data li .wd-spd').html( makeRoundNumber(d.forecast.forecastday[0].day.maxwind_mph));
