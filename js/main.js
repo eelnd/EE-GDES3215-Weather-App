@@ -3,7 +3,7 @@
    --------------------------------------------------------- */
 
   function weatherBalloon() {
-    fetch('http://api.weatherapi.com/v1/forecast.json?key=5499e7ba0a254a3d986172508231110&q=kahuku, Hawaii&days=7&aqi=no&alerts=no')  
+    fetch('https://api.weatherapi.com/v1/forecast.json?key=5499e7ba0a254a3d986172508231110&q=kahuku, Hawaii&days=7&aqi=no&alerts=no')  
     .then(function(resp) { return resp.json() }) // Convert data to json
     .then(function(data) {
       drawWeather(data);
