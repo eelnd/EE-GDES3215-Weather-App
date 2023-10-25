@@ -28,10 +28,10 @@
 
 
     /*forecast for the next six days*/
-    $('.extended li:nth-child(0) .day').html(displayDay(1));
-    $('.extended li:nth-child(0) .icon').html(printGraphic(d.forecast.forecastday[1].day.condition.text));
-    $('.extended li:nth-child(0) .high').html( makeRoundNumber(d.forecast.forecastday[1].day.maxtemp_f));
-    $('.extended li:nth-child(0) .low').html( makeRoundNumber(d.forecast.forecastday[1].day.mintemp_f));
+    $('.extended .day').html(displayDay(0));
+    $('.extended .icon').html(printGraphic(d.forecast.forecastday[0].day.condition.text));
+    $('.extended .high').html( makeRoundNumber(d.forecast.forecastday[0].day.maxtemp_f));
+    $('.extended .low').html( makeRoundNumber(d.forecast.forecastday[0].day.mintemp_f));
 
     $('.extended li:nth-child(1) .day').html(displayDay(1));
     $('.extended li:nth-child(1) .icon').html(printGraphic(d.forecast.forecastday[1].day.condition.text));
@@ -73,17 +73,17 @@
     $('.wind-data li:nth-child(2) .wd-spd').html( makeRoundNumber(d.forecast.forecastday[2].day.maxwind_mph));
     $('.wind-data li:nth-child(2) .wd-day').html(displayDay(2));
 
-    $('.wind-data li:nth-child(3) .wd-spd').html( makeRoundNumber(d.forecast.forecastday[3].day.maxwind_mph));
-    $('.wind-data li:nth-child(3) .wd-day').html(displayDay(3));
+    // $('.wind-data li:nth-child(3) .wd-spd').html( makeRoundNumber(d.forecast.forecastday[3].day.maxwind_mph));
+    // $('.wind-data li:nth-child(3) .wd-day').html(displayDay(3));
 
-    $('.wind-data li:nth-child(4) .wd-spd').html( makeRoundNumber(d.forecast.forecastday[4].day.maxwind_mph));
-    $('.wind-data li:nth-child(4) .wd-day').html(displayDay(4));
+    // $('.wind-data li:nth-child(4) .wd-spd').html( makeRoundNumber(d.forecast.forecastday[4].day.maxwind_mph));
+    // $('.wind-data li:nth-child(4) .wd-day').html(displayDay(4));
 
-    $('.wind-data li:nth-child(5) .wd-spd').html( makeRoundNumber(d.forecast.forecastday[5].day.maxwind_mph));
-    $('.wind-data li:nth-child(5) .wd-day').html(displayDay(5));
+    // $('.wind-data li:nth-child(5) .wd-spd').html( makeRoundNumber(d.forecast.forecastday[5].day.maxwind_mph));
+    // $('.wind-data li:nth-child(5) .wd-day').html(displayDay(5));
 
-    $('.wind-data li:nth-child(6) .wd-spd').html( makeRoundNumber(d.forecast.forecastday[6].day.maxwind_mph));
-    $('.wind-data li:nth-child(6) .wd-day').html(displayDay(6));
+    // $('.wind-data li:nth-child(6) .wd-spd').html( makeRoundNumber(d.forecast.forecastday[6].day.maxwind_mph));
+    // $('.wind-data li:nth-child(6) .wd-day').html(displayDay(6));
 
 
     // $('.wind-forecast .avg-wind-spd .wd-avg').html( makeRoundNumber(d.current.temp_f));
